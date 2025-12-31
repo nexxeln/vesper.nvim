@@ -7,7 +7,7 @@ a minimal dark theme for neovim
 ```lua
 -- lazy.nvim
 {
-  "nexxel/vesper.nvim",
+  "nexxeln/vesper.nvim",
   lazy = false,
   priority = 1000,
   config = function()
