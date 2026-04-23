@@ -254,6 +254,24 @@ function M.setup(c)
   hl("FlashMatch", { fg = c.accent })
   hl("FlashCurrent", { fg = c.bg, bg = c.string })
   hl("FlashBackdrop", { fg = c.comment })
+
+  -- terminal colors
+  vim.g.terminal_color_0 = c.bg
+  vim.g.terminal_color_1 = c.error
+  vim.g.terminal_color_2 = c.string
+  vim.g.terminal_color_3 = c.accent
+  vim.g.terminal_color_4 = c.fg_muted
+  vim.g.terminal_color_5 = c.accent
+  vim.g.terminal_color_6 = c.string
+  vim.g.terminal_color_7 = c.fg
+  vim.g.terminal_color_8 = c.line_nr
+  vim.g.terminal_color_9 = c.error_bright
+  vim.g.terminal_color_10 = c.string_bright
+  vim.g.terminal_color_11 = c.accent_bright
+  vim.g.terminal_color_12 = c.fg_muted_bright
+  vim.g.terminal_color_13 = c.accent
+  vim.g.terminal_color_14 = c.string_dim
+  vim.g.terminal_color_15 = c.fg
 end
 
 return M

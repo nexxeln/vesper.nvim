@@ -20,6 +20,11 @@ M.colors = {
   deleted = "#FF8080",
   line_nr = "#505050",
   search = "#575757",
+  error_bright = "#FF9999",
+  string_bright = "#B3FFE4",
+  accent_bright = "#FFD1A8",
+  fg_muted_bright = "#B0B0B0",
+  string_dim = "#66DDCC",
   border = "#282828",
   none = "NONE",
 }
