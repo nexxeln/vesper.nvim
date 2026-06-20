@@ -2,6 +2,7 @@ local M = {}
 
 M.config = {
   transparent = false,
+  style = "auto",
 }
 
 function M.setup(opts)
@@ -16,7 +17,19 @@ function M.load()
   vim.g.colors_name = "vesper"
   vim.o.termguicolors = true
 
-  local palette = require("vesper.palette")
+  local palette
+  if M.config.style == "light" then
+    palette = require("vesper.palette_light")
+  elseif M.config.style == "dark" then
+    palette = require("vesper.palette")
+  else
+    if vim.o.background == "light" then
+      palette = require("vesper.palette_light")
+    else
+      palette = require("vesper.palette")
+    end
+  end
+
   local colors = vim.deepcopy(palette.colors)
 
   if M.config.transparent then
